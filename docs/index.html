@@ -7,11 +7,49 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .header-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 1em;
+        }
+
+        .row-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 3em;
+        }
+
+        .column-container {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+            gap: 10em;
+        }
+        </style>
 </head>
 
 <body>
+
+    <div class="row-container">
+        <h1>The Introduction to Web Maps</h1>
+    </div>
+
+    <div class="row-container">
+        <h4>by Jui Sarwate</h4>
+    </div>
+
     <div id='map'></div>
     <script type='text/javascript' src="county-map.js"></script>
+
+    <p>Here are two maps.</p>
+
 </body>
 
 </html>
